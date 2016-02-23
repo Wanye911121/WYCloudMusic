@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginImageView" destination="Uiz-gC-MZF" id="7qP-kx-VQP"/>
+                <outlet property="titleLabel" destination="KPD-nP-Pfz" id="kT2-Su-7lN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录后收藏歌曲，手机电脑多端同步" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPD-nP-Pfz">
+                    <rect key="frame" x="20" y="30" width="280" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="f6Q-6y-JWh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_login_banner_pc" translatesAutoresizingMaskIntoConstraints="NO" id="Uiz-gC-MZF">
+                    <rect key="frame" x="50" y="91" width="220" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Uiz-gC-MZF" secondAttribute="height" multiplier="480:280" id="OgG-YR-eII"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbz-z6-7VJ">
+                    <rect key="frame" x="0.0" y="269" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bUj-24-95g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                    <state key="normal" title="手机号登录" image="cm2_login_mobile">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="phoneLoginEvent:" destination="-1" eventType="touchUpInside" id="psb-4S-yvC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isL-yz-FnP">
+                    <rect key="frame" x="0.0" y="319" width="320" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="新浪微博登录" image="cm2_login_sina">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sinaLoginEvent:" destination="-1" eventType="touchUpInside" id="mG1-rL-hF6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-o9-AL1">
+                    <rect key="frame" x="0.0" y="369" width="320" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="45" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="网易邮箱账号登录" image="cm2_login_163">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="wangyiLoginEvent:" destination="-1" eventType="touchUpInside" id="ugY-Hf-ifN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="isL-yz-FnP" firstAttribute="height" secondItem="lbz-z6-7VJ" secondAttribute="height" id="0Go-Tg-Zyd"/>
+                <constraint firstItem="isL-yz-FnP" firstAttribute="top" secondItem="lbz-z6-7VJ" secondAttribute="bottom" id="8Hm-am-nLW"/>
+                <constraint firstAttribute="trailing" secondItem="lbz-z6-7VJ" secondAttribute="trailing" id="Ap2-ND-abS"/>
+                <constraint firstItem="isL-yz-FnP" firstAttribute="trailing" secondItem="lbz-z6-7VJ" secondAttribute="trailing" id="DJi-zy-4H8"/>
+                <constraint firstItem="lbz-z6-7VJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EBD-ub-BcG"/>
+                <constraint firstItem="ffQ-o9-AL1" firstAttribute="height" secondItem="isL-yz-FnP" secondAttribute="height" id="Gs8-PR-c8n"/>
+                <constraint firstItem="ffQ-o9-AL1" firstAttribute="trailing" secondItem="isL-yz-FnP" secondAttribute="trailing" id="TBs-f5-yyf"/>
+                <constraint firstItem="ffQ-o9-AL1" firstAttribute="leading" secondItem="isL-yz-FnP" secondAttribute="leading" id="bSf-ld-VOH"/>
+                <constraint firstItem="KPD-nP-Pfz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="eDh-Gi-Whk"/>
+                <constraint firstItem="KPD-nP-Pfz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i0m-4q-gHX"/>
+                <constraint firstItem="lbz-z6-7VJ" firstAttribute="top" secondItem="Uiz-gC-MZF" secondAttribute="bottom" constant="50" id="iZ0-hU-2zS"/>
+                <constraint firstItem="ffQ-o9-AL1" firstAttribute="top" secondItem="isL-yz-FnP" secondAttribute="bottom" id="ia6-It-XK8"/>
+                <constraint firstItem="Uiz-gC-MZF" firstAttribute="top" secondItem="KPD-nP-Pfz" secondAttribute="bottom" constant="40" id="jJq-M9-6zv"/>
+                <constraint firstAttribute="trailing" secondItem="Uiz-gC-MZF" secondAttribute="trailing" constant="50" id="kBI-g8-f8o"/>
+                <constraint firstItem="Uiz-gC-MZF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="oGW-RV-SPQ"/>
+                <constraint firstItem="KPD-nP-Pfz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="yzk-vX-qxD"/>
+                <constraint firstItem="isL-yz-FnP" firstAttribute="leading" secondItem="lbz-z6-7VJ" secondAttribute="leading" id="zzV-uH-XfI"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="323" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cm2_login_163" width="30" height="30"/>
+        <image name="cm2_login_banner_pc" width="241" height="140"/>
+        <image name="cm2_login_mobile" width="30" height="30"/>
+        <image name="cm2_login_sina" width="30" height="30"/>
+    </resources>
+</document>
