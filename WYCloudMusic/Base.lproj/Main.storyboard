@@ -447,6 +447,8 @@
                             <outlet property="delegate" destination="xCu-io-0DO" id="ASQ-PC-f8W"/>
                         </connections>
                     </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="cycleScrollView" destination="Vmt-7b-bXY" id="NUt-Tm-ZdE"/>
                     </connections>
@@ -468,7 +470,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfD-rT-yWJ">
-                                <rect key="frame" x="0.0" y="20" width="320" height="1480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxY-gC-J0C" userLabel="middleView">
                                         <rect key="frame" x="0.0" y="160" width="320" height="100"/>
@@ -850,7 +852,7 @@
                                     <constraint firstItem="fxY-gC-J0C" firstAttribute="top" secondItem="U27-ac-4rM" secondAttribute="bottom" id="tFM-pi-XaO"/>
                                     <constraint firstItem="FZz-M6-fj3" firstAttribute="top" secondItem="ymG-Qx-j9m" secondAttribute="bottom" constant="10" id="urC-Ok-sPA"/>
                                     <constraint firstAttribute="trailing" secondItem="ymG-Qx-j9m" secondAttribute="trailing" id="uwW-sR-4b7"/>
-                                    <constraint firstAttribute="bottom" secondItem="y6g-W7-0Nw" secondAttribute="bottom" id="uzR-O4-ros"/>
+                                    <constraint firstAttribute="bottom" secondItem="y6g-W7-0Nw" secondAttribute="bottom" constant="100" id="uzR-O4-ros"/>
                                     <constraint firstItem="y6g-W7-0Nw" firstAttribute="top" secondItem="FZz-M6-fj3" secondAttribute="bottom" constant="10" id="wuv-Bj-g5l"/>
                                     <constraint firstItem="U27-ac-4rM" firstAttribute="top" secondItem="vfD-rT-yWJ" secondAttribute="top" id="xQT-ai-AMH"/>
                                 </constraints>
@@ -859,9 +861,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vfD-rT-yWJ" secondAttribute="trailing" id="U8v-5r-Y0V"/>
-                            <constraint firstItem="vfD-rT-yWJ" firstAttribute="top" secondItem="bmb-GL-ovm" secondAttribute="bottom" id="aZk-R4-sOD"/>
+                            <constraint firstAttribute="bottom" secondItem="vfD-rT-yWJ" secondAttribute="bottom" id="f4h-aS-btr"/>
                             <constraint firstItem="vfD-rT-yWJ" firstAttribute="leading" secondItem="Ofp-xv-bZe" secondAttribute="leading" id="php-9p-JmE"/>
-                            <constraint firstItem="0an-pG-l0a" firstAttribute="top" secondItem="vfD-rT-yWJ" secondAttribute="bottom" id="zxP-ls-llz"/>
+                            <constraint firstItem="vfD-rT-yWJ" firstAttribute="top" secondItem="Ofp-xv-bZe" secondAttribute="top" id="vvO-dc-xqi"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
